@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+  weights: 500, 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", monospace, serif;
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.container {
+  width: 800px;
+  margin: 40px auto;
+  background-color: var(--White);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 20px;
+}
+
+.header h2 span {
+  background-color: var(--Blue);
+  padding: 2px 8px;
+  color: var(--White);
+  border-radius: 4px;
+  border: none;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.header a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--Grayish-blue);
+  cursor: pointer;
+}
+
+.header a:hover {
+  color: var(--Blue);
+}
