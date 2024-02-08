@@ -15,7 +15,6 @@
 
     <title>Frontend Mentor | Notifications page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -29,43 +28,53 @@
   <body>
     <div class="container">
       <div class="header">
-        <h2>Notifications <span>3</span></h2>
+        <h2>Notifications <span id="num">3</span></h2>
         <a>Mark all as read</a>
       </div>
+      <!-- Notification start -->
       <div class="notification-container">
-        <div class="notification">
+        <div class="notification unread">
           <img src="./assets/images/avatar-mark-webber.webp" />
           <div class="info">
             <p>
               <span class="name">Mark Webber </span> reacted to your recent post
               <span class="purpose"> My first tournament today!</span>
-              <span class="new">.</span>
+              <span class="dot"></span>
             </p>
             <span class="time">1m ago</span>
           </div>
         </div>
-        <div class="notification">
+        <!-- Notification end -->
+
+        <!-- Notification start -->
+        <div class="notification unread">
           <img src="./assets/images/avatar-angela-gray.webp" />
           <div class="info">
             <p>
               <span class="name">Angela Gray</span> followed you
-              <span class="new">.</span>
+              <span class="dot"></span>
             </p>
             <span class="time">5m ago</span>
           </div>
         </div>
-        <div class="notification">
+        <!-- Notification end -->
+
+        <!-- Notification start -->
+        <div class="notification unread">
           <img src="./assets/images/avatar-jacob-thompson.webp" />
           <div class="info">
             <p>
               <span class="name">Jacob Thompson </span> has joined your group
-              <span class="purpose"> Chess Club</span>
-              <span class="new">.</span>
+              <span class="purpose chess"> Chess Club</span>
+              <span class="dot"></span>
             </p>
             <span class="time">1 day ago</span>
           </div>
         </div>
-        <div class="notification">
+        <!-- Notification end -->
+
+        <!-- Notification start -->
+        <div class="notification private-msg">
           <img src="./assets/images/avatar-rizky-hasanuddin.webp" />
           <div class="info">
             <p>
@@ -82,7 +91,11 @@
             </div>
           </div>
         </div>
-        <div class="notification">
+
+        <!-- Notification end -->
+
+        <!-- Notification start -->
+        <div class="notification comment">
           <img src="./assets/images/avatar-kimberly-smith.webp" />
           <div class="info">
             <p>
@@ -94,7 +107,9 @@
 
           <img class="msg-img" src="/assets/images/image-chess.webp" />
         </div>
+        <!-- Notification  end -->
 
+        <!-- Notification start -->
         <div class="notification">
           <img src="./assets/images/avatar-nathan-peterson.webp" />
           <div class="info">
@@ -108,16 +123,22 @@
             <span class="time">2 weeks ago</span>
           </div>
         </div>
+
+        <!-- Notification end -->
+
+        <!-- Notification start -->
         <div class="notification">
           <img src="./assets/images/avatar-anna-kim.webp" />
           <div class="info">
             <p>
               <span class="name"> Anna Kim</span> left the group
-              <span class="purpose"> Chess Club</span>
+              <span class="purpose chess"> Chess Club</span>
             </p>
             <span class="time">2 weeks ago</span>
           </div>
         </div>
+
+        <!-- Notification end -->
       </div>
     </div>
 

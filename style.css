@@ -24,6 +24,7 @@
 body {
   font-family: "Plus Jakarta Sans", monospace, serif;
   background-color: var(--Light-grayish-blue-1);
+  font-size: 18px;
 }
 
 .container {
@@ -32,6 +33,7 @@ body {
   background-color: var(--White);
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0px 0px 25px -13px rgba(0, 0, 0, 0.26);
 }
 
 .header {
@@ -74,22 +76,18 @@ body {
   padding: 15px;
   margin-bottom: 6px;
   border-radius: 10px;
-  background-color: var(--Light-grayish-blue-1);
-}
-
-.notification:nth-child(n + 4) {
   background-color: var(--White);
 }
 
-.notification:nth-child(4) img {
-  margin-top: -86px;
+.unread {
+  background-color: var(--Light-grayish-blue-1);
 }
 
-.notification:nth-child(5) {
+.comment {
   display: flex;
 }
 
-.notification:nth-child(5) .msg-img {
+.comment .msg-img {
   cursor: pointer;
   margin-left: auto;
 }
@@ -127,15 +125,78 @@ body {
   color: var(--Blue);
 }
 
+span.dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 6px;
+  border-radius: 50%;
+  background-color: var(--Red);
+}
+.chess {
+  color: var(--Blue) !important;
+}
+
 .time {
   color: var(--Grayish-blue);
   font-size: 15px;
 }
 
 .message {
-  padding: 15px 10px;
-  margin-top: 8px;
+  padding: 12px;
+  margin-top: 10px;
   border-radius: 5px;
   border: 1px solid var(--Light-grayish-blue-1);
   background-color: var(--White);
+  cursor: pointer;
+}
+
+.message:hover {
+  background-color: var(--Light-grayish-blue-2);
+}
+
+.private-msg {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 648px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: var(--White);
+  }
+  .container {
+    width: 520px;
+  }
+  .notification {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .container {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .container {
+    width: 400px;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .container {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 315px;
+  }
 }
