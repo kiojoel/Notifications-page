@@ -76,6 +76,7 @@ body {
   padding: 15px;
   margin-bottom: 6px;
   border-radius: 10px;
+  cursor: pointer;
   background-color: var(--White);
 }
 
@@ -192,11 +193,11 @@ span.dot {
 }
 @media only screen and (max-width: 430px) {
   .container {
-    width: 350px;
+    width: 375px;
   }
 }
 @media only screen and (max-width: 375px) {
   .container {
-    width: 315px;
+    width: 325px;
   }
 }
