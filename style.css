@@ -24,7 +24,7 @@
 body {
   font-family: "Plus Jakarta Sans", monospace, serif;
   background-color: var(--Light-grayish-blue-1);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .container {
@@ -73,7 +73,7 @@ body {
 .notification {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 13px;
   margin-bottom: 6px;
   border-radius: 10px;
   cursor: pointer;
@@ -99,7 +99,7 @@ body {
 }
 
 .name {
-  font-weight: 700;
+  font-weight: 800;
   color: black;
   margin-right: 2px;
   cursor: pointer;
@@ -117,7 +117,7 @@ body {
 
 .purpose {
   color: var(--Dark-grayish-blue);
-  font-weight: 700;
+  font-weight: 800;
   margin-left: 2px;
   cursor: pointer;
 }
